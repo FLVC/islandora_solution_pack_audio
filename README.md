@@ -20,7 +20,16 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 Set the path for `lame` and select a viewer in Administration » Islandora » Audio Collection (admin/islandora/audio).
 
-![Configuration](http://i.imgur.com/jx73lEK.png)
+![Configuration](https://camo.githubusercontent.com/97cad9681ab47b9e8c5dadde7970ce46f3ce2278/687474703a2f2f692e696d6775722e636f6d2f6a7837336c454b2e706e67)
+
+Current viewers that can be configured include:
+
+* [Islandora JW Player](https://github.com/Islandora/islandora_jwplayer)
+* [Islandora Video.js](https://github.com/Islandora/islandora_videojs)
+
+## Documentation
+
+Further documentation for this module is available at [our wiki](https://wiki.duraspace.org/display/ISLANDORA/Audio+Solution+Pack).
 
 Current viewers that can be configured include:
 
@@ -37,11 +46,11 @@ Having problems or solved a problem? Check out the Islandora google groups for a
 ## Maintainers/Sponsors
 Current maintainers:
 
-* [Nick Ruest](https://github.com/ruebot)
+* [Rosemary Le Faive](https://github.com/rosiel)
 
 ## Development
 
-If you would like to contribute to this module, please check out our helpful [Documentation for Developers](https://github.com/Islandora/islandora/wiki#wiki-documentation-for-developers) info, as well as our [Developers](http://islandora.ca/developers) section on the Islandora.ca site.
+If you would like to contribute to this module, please check out [CONTRIBUTING.md](CONTRIBUTING.md). In addition, we have helpful [Documentation for Developers](https://github.com/Islandora/islandora/wiki#wiki-documentation-for-developers) info, as well as our [Developers](http://islandora.ca/developers) section on the [Islandora.ca](http://islandora.ca) site.
 
 ## License
 
