@@ -18,14 +18,36 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 ## Configuration
 
-Set the path for `lame` and select a viewer in Administration » Islandora » Audio Collection (admin/islandora/audio).
+### Derivative Configuration
 
-![Configuration](https://camo.githubusercontent.com/97cad9681ab47b9e8c5dadde7970ce46f3ce2278/687474703a2f2f692e696d6775722e636f6d2f6a7837336c454b2e706e67)
+A set of options exist for configuring derivatives for audio objects. 
 
-Current viewers that can be configured include:
+* Defer (do not create) derivatives for audio objects during ingest. You may
+find this useful if derivatives are being created by an external service,
+or if they are not required. This is specific to audio objects, but if 
+derivatives are deferred for all Islandora objects (an option under 
+admin/islandora/configure) then audio derivatives will not be created 
+regardless of how this option is set.
+* Set the path for `lame`. MP3 derivatives are created using the `lame` 
+command which must be installed as described above.
+* MP3 derivative quality can be configured if high-quality (or low-size)
+ derivatives are desired. Note that numbers closer to 0 will result in 
+ larger, higher-quality audio files.
+* Use original file as fallback will allow the OBJ to be played in a 
+player if a derivative cannot be found, and the original file is a 
+format that can be played. This, in conjunction with defering audio 
+derivatives, may save space in the repository and improve playback 
+quality if, for example, you are ingesting a collection of MP3 files. 
+ 
+ ### Viewer Configuration
+
+Select the desired viewer for audio objects. Current viewers that can 
+be configured include:
 
 * [Islandora JW Player](https://github.com/Islandora/islandora_jwplayer)
 * [Islandora Video.js](https://github.com/Islandora/islandora_videojs)
+
+![Configuration](https://cloud.githubusercontent.com/assets/1943338/18892256/42a78df0-84df-11e6-8e51-6b67c1a8c81a.png)
 
 ## Documentation
 
